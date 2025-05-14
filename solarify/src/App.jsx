@@ -29,7 +29,7 @@ const router = createBrowserRouter([
       { path: "/", element: <Home /> }, // shows Home at "/"
       { path: "/mainpage", element: <CompletePage /> }, // shows Main at "/mainpage"
       {path:"/about",element:<About/>}
-      { path: "/home", element: <CompletePage /> }, // shows Main at "/mainpage"
+      { path: "/completepage", element: <CompletePage /> }, // shows Main at "/mainpage"
     ],
   },
 ]);
