@@ -3,11 +3,12 @@ import Main from "./Main.jsx";
 import BrankColaboration from "./BrankColaboration.jsx";
 
 function CompletePage() {
-  return;
-  <>
-    <Main />
-    <BrankColaboration />
-  </>;
+  return (
+    <>
+      <Main />
+      <BrankColaboration />
+    </>
+  );
 }
 
 export default CompletePage;

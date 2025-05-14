@@ -9,8 +9,6 @@ import Home from "./Pages/Home.jsx";
 // import Footer from "./components/Footer.jsx";
 import About from "./Pages/About.jsx";
 
-
-
 // Layout Component
 const MainLayout = () => {
   return (
@@ -29,11 +27,8 @@ const router = createBrowserRouter([
     path: "/",
     element: <MainLayout />,
     children: [
-      { path: "/", element: <Home /> },         // shows Home at "/"
-      { path: "/main", element: <Main /> }, // shows Main at "/mainpage"
-      {path:"/about",element:<About/>},
-      { path: "", element: <Home /> }, // shows Home at "/"
-      { path: "/completepage", element: <CompletePage /> }, // shows Main at "/mainpage"
+      { path: "/", element: <Home /> }, // shows Home at "/"
+      { path: "/mainpage", element: <CompletePage /> }, // shows Main at "/mainpage"
     ],
   },
 ]);
