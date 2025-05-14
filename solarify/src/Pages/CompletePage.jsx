@@ -1,6 +1,6 @@
 import React from "react";
-import Main from "./Main.jsx";
-import BrankColaboration from "./BrankColaboration.jsx";
+import Main from "../components/Main.jsx";
+import BrankColaboration from "../components/BrankColaboration.jsx";
 
 function CompletePage() {
   return (
