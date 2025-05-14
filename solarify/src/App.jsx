@@ -2,7 +2,7 @@
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 
 // Import components
-import Navbar from "./Pages/Navbar.jsx";
+import Navbar from "./components/Navbar.jsx";
 // Fix path if needed
 import CompletePage from "./Pages/CompletePage.jsx";
 import Home from "./Pages/Home.jsx";
@@ -29,6 +29,7 @@ const router = createBrowserRouter([
       { path: "/", element: <Home /> }, // shows Home at "/"
       { path: "/mainpage", element: <CompletePage /> }, // shows Main at "/mainpage"
       {path:"/about",element:<About/>}
+      { path: "/home", element: <CompletePage /> }, // shows Main at "/mainpage"
     ],
   },
 ]);
