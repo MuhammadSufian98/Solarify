@@ -6,6 +6,9 @@ import Navbar from "./Pages/Navbar.jsx";
 // Fix path if needed
 import CompletePage from "./Pages/CompletePage.jsx";
 import Home from "./Pages/Home.jsx";
+// import Footer from "./components/Footer.jsx";
+import About from "./Pages/About.jsx";
+
 
 
 // Layout Component
@@ -14,6 +17,7 @@ const MainLayout = () => {
     <>
       <Navbar />
       <Outlet />
+      {/* <Footer/> */}
       {/* <Footer/> */}
     </>
   );
@@ -25,6 +29,9 @@ const router = createBrowserRouter([
     path: "/",
     element: <MainLayout />,
     children: [
+      { path: "/", element: <Home /> },         // shows Home at "/"
+      { path: "/main", element: <Main /> }, // shows Main at "/mainpage"
+      {path:"/about",element:<About/>},
       { path: "", element: <Home /> }, // shows Home at "/"
       { path: "/completepage", element: <CompletePage /> }, // shows Main at "/mainpage"
     ],
