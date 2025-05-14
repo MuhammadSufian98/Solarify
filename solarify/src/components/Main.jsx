@@ -18,20 +18,27 @@ function Main() {
           </div>
         </div>
         <div className="ImageDiv">
-          <div>
+          <div className="ImageDiv2">
+            <div className="ClinetCount">
+              <h1 className="PURPLE">140k+</h1>
+              <h1>Happy Clients</h1>
+            </div>
             <img src={solarImage2} alt="Solar2" className="MainImages2" />
-            <div>
+          </div>
+          <div className="ImageDiv1">
+            <div className="ClinetProjectCount">
               <div>
                 <h1>200+</h1>
                 <p>Client Projects Completed.</p>
               </div>
+              <hr className="divider" />
               <div>
                 <h1>200+</h1>
                 <p>Client Projects Completed.</p>
               </div>
             </div>
+            <img src={solarImage} alt="Solar" className="MainImages" />
           </div>
-          <img src={solarImage} alt="Solar" className="MainImages" />
         </div>
         <div></div>
       </div>
