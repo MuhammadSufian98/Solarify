@@ -1,7 +1,7 @@
 import React from "react";
 
-function WecomePage() {
+function WelcomePage() {
   return <div></div>;
 }
 
-export default WecomePage;
+export default WelcomePage;
