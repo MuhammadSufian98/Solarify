@@ -1,0 +1,57 @@
+@font-face {
+  font-family: "Outfit";
+  src: url("./assets/fonts/Outfit-VariableFont_wght.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+.navbarMian {
+  display: flex;
+  justify-content: center;
+}
+.navbar {
+  font-family: "Outfit", sans-serif;
+  width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: transparent;
+}
+.logo {
+  width: 200px;
+}
+.navLinksDiv {
+  display: flex;
+  gap: 20px;
+}
+.NavLink {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 32.4px;
+  color: #0c0c3c;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+.NavLink:hover {
+  color: #7b78f7;
+}
+.navContactBTN {
+  background-color: white;
+  width: 180px;
+  color: #0c0c3c;
+  padding: 10px 20px;
+  border: 1px solid #0c0c3c;
+  border-radius: 35px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 32.4px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.8s ease, background-color 0.8s ease;
+}
+.navContactBTN:hover {
+  background-color: #7b78f7;
+  color: white;
+  border: 1px solid #7b78f7;
+}
