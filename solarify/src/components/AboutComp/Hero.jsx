@@ -1,11 +1,19 @@
 import React from 'react'
+const iconArray=[
+    {
+        id:1,
 
+        icon:"45",
+        heading:"Released Projects",
+        desc:"Successfully finished projects within deadline"
+    }
+]
 
 
 const Hero = () => {
   return (
     <div className="w-full min-h-screen">
-        <div className="max-w-lg mx-auto flex justify-around">
+        <div className="w-[80%] mx-auto flex justify-between">
             <div className="flex flex-col gap-10">
                 <h1 className="text-5xl font-bold">ABOUT SOLARIFY.</h1>
                 <div className="flex w-full ">
@@ -16,8 +24,8 @@ const Hero = () => {
                     </div>
                 </div>
             </div>
-            <div>
-                <img src="/About/hero.avif" alt="" />
+            <div className="w-80">
+                <img className="w-full" src="/About/hero.avif" alt="" />
 
             </div>
         </div>
