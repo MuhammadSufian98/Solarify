@@ -46,7 +46,7 @@
   line-height: 32.4px;
   text-decoration: none;
   cursor: pointer;
-  transition: color 0.8s ease;
+  transition: background-color 0.8s ease;
 }
 .navContactBTN:hover {
   background-color: #7b78f7;
