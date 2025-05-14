@@ -1,0 +1,66 @@
+@font-face {
+  font-family: "Outfit";
+  src: url("./assets/fonts/Outfit-VariableFont_wght.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+.MainOutter {
+  margin: auto;
+  font-family: "Outfit", sans-serif;
+  width: 1000px;
+}
+.HeadingDiv {
+  display: flex;
+}
+.Heading {
+  font-size: 110px;
+  font-weight: 700;
+  line-height: 118.8px;
+  color: rgb(12, 12, 60);
+  z-index: 4;
+}
+.Paragraph {
+  display: block;
+  margin-top: 80px;
+  width: 250px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 36px;
+  color: rgb(82, 82, 87);
+  z-index: 4;
+}
+.DicoverBTN {
+  background-color: #7b78f7;
+  width: 180px;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 35px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 32.4px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.8s ease;
+}
+.DicoverBTN:hover {
+  background-color: black;
+}
+.ImageDiv {
+  top: 170px;
+  left: 280px;
+  position: absolute;
+  display: flex;
+  gap: 20px;
+  z-index: 1;
+}
+.MainImages {
+  border-radius: 25px;
+  width: 270px;
+}
+.MainImages2 {
+  padding-top: 100px;
+  border-radius: 25px;
+  width: 270px;
+  height: 470px;
+}
