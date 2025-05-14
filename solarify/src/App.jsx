@@ -6,7 +6,9 @@ import Navbar from "./components/Navbar.jsx";
  // Fix path if needed
 import Main from "./components/Main.jsx";
 import Home from "./Pages/Home.jsx";
-import Footer from "./Pages/Footer.jsx";
+import Footer from "./components/Footer.jsx";
+import About from "./Pages/About.jsx";
+
 
 // Layout Component
 const MainLayout = () => {
@@ -14,7 +16,7 @@ const MainLayout = () => {
     <>
       <Navbar />
       <Outlet />
-      <Footer/>
+      {/* <Footer/> */}
     </>
   );
 };
@@ -25,8 +27,9 @@ const router = createBrowserRouter([
     path: "/",
     element: <MainLayout />,
     children: [
-      { path: "", element: <Home /> },         // shows Home at "/"
-      { path: "", element: <Main /> }, // shows Main at "/mainpage"
+      { path: "/", element: <Home /> },         // shows Home at "/"
+      { path: "/main", element: <Main /> }, // shows Main at "/mainpage"
+      {path:"/about",element:<About/>}
     ],
   },
 ]);
