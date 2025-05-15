@@ -1,0 +1,40 @@
+@font-face {
+  font-family: "Outfit";
+  src: url("./assets/fonts/Outfit-VariableFont_wght.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+.MainPowerServiceDiv {
+  font-family: "Outfit", sans-serif;
+  margin: auto;
+  padding: 100px 0;
+  width: 100%;
+  background-color: #f7f8fa;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.MainPowerHeadingDiv {
+  display: flex;
+}
+.PowerHeading {
+  width: 600px;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 57px;
+  color: rgb(12, 12, 60);
+}
+.BannersDiv {
+  display: flex;
+  gap: 20px;
+}
+.ArrowDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+.Arrows {
+  width: 50px;
+}
