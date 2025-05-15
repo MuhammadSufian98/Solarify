@@ -25,7 +25,7 @@ export default function Navbar() {
           <a href="#" className="NavLink">
             Home
           </a>
-          <a href="#" className="NavLink">
+          <a href="/about" className="NavLink">
             About
           </a>
           <a href="#" className="NavLink">
