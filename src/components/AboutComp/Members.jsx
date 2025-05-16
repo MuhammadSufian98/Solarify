@@ -52,7 +52,7 @@ const Members = () => {
   };
 
   return (
-    <div className="w-full min-h-screen  pb-100 pt-10 px-6">
+    <div className="w-full min-h-md  pb-10 pt-10 px-6">
       <div className="max-w-7xl mx-auto flex flex-col gap-12">
         {/* Header Section */}
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
