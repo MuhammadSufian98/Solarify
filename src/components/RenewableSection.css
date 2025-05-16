@@ -1,0 +1,114 @@
+@font-face {
+  font-family: "Outfit";
+  src: url("./assets/fonts/Outfit-VariableFont_wght.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+.MainDiv {
+  font-family: "Outfit", sans-serif;
+  margin: auto;
+  max-width: 1000px;
+  width: 100%;
+  min-width: 640px;
+}
+.RenewableSectionMainDiv {
+  display: flex;
+  flex-direction: column;
+  padding: 150px 30px;
+  gap: 30px;
+}
+
+.MainHeading {
+  width: 900px;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 35.84px;
+  text-align: center;
+  color: rgb(12, 12, 60);
+}
+.RenewableQuestionImgDiv {
+  display: flex;
+  width: 1000px;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.RenewableQuestionDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 500px;
+}
+.Divider {
+  border: none;
+  height: 1px;
+  background-color: #ccc;
+  margin: 20px 0;
+}
+
+.DropDownQuestionDiv {
+  display: flex;
+  flex-direction: column;
+}
+.DropDown {
+  margin: 0;
+  width: 400px;
+}
+.QnAHeading {
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 57px;
+  color: rgb(12, 12, 60);
+}
+.QuestionDiv {
+  display: flex;
+  width: 450px;
+  position: relative;
+}
+.Question {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: normal;
+  color: rgb(0, 0, 0);
+  margin: 0;
+  width: 400px;
+}
+.IconSpan {
+  display: flex;
+  gap: 10px;
+}
+.Icon {
+  width: 30px;
+}
+.Answer {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  transform: translateY(-10px);
+}
+
+.DisplayBlock {
+  max-height: 300px;
+  opacity: 1;
+  transform: translateY(0);
+  margin-top: 10px;
+}
+.DisplayNone {
+  display: none;
+}
+.ImgDiv {
+  display: flex;
+  gap: 20px;
+}
+.Img1Container {
+  display: flex;
+  align-items: flex-start;
+}
+.Images {
+  width: 400px;
+  border-radius: 25px;
+}
+.height {
+  height: 370px;
+}

@@ -1,8 +1,8 @@
 import React from "react";
 import "./powerService.css";
-import Power from "../../assets/PowerService/power.svg";
-import leftArrow from "../../assets/PowerService/LeftArrow.png";
-import RightArrow from "../../assets/PowerService/RightArrow.png";
+import Power from "/PowerService/power.svg";
+import leftArrow from "/PowerService/LeftArrow.png";
+import RightArrow from "/PowerService/RightArrow.png";
 import Banner from "./PowerServiceBannerComp";
 
 function PowerService() {

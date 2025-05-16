@@ -3,11 +3,11 @@ import "./colaboration.css";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import images1 from "../assets/businesses/business1.svg";
-import images2 from "../assets/businesses/business.2.svg";
-import images3 from "../assets/businesses/business3.svg";
-import images4 from "../assets/businesses/business4.svg";
-import images5 from "../assets/businesses/business5.svg";
+import images1 from "/businesses/business1.svg";
+import images2 from "/businesses/business.2.svg";
+import images3 from "/businesses/business3.svg";
+import images4 from "/businesses/business4.svg";
+import images5 from "/businesses/business5.svg";
 
 function BrankColaboration() {
   const settings = {

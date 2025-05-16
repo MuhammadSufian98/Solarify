@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "./Main.css";
-import solarImage from "../assets/home/solarBanner.png";
-import solarImage2 from "../assets/home/solarBanner2.jpg";
-import Arrow from "../assets/right-up.png";
+import solarImage from "/home/solarBanner.png";
+import solarImage2 from "/home/solarBanner2.jpg";
+import Arrow from "/right-up.png";
 
 function Main() {
   const [count, setCount] = useState(0);

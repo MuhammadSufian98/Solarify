@@ -1,7 +1,7 @@
 import React from "react";
 import "./welcomeComp.css";
-import image from "../assets/welcomeComp/welcomeImg.png";
-import image2 from "../assets/welcomeComp/fixed.jpg";
+import image from "/welcomeComp/welcomeImg.png";
+import image2 from "/welcomeComp/fixed.jpg";
 
 function WelcomeComp() {
   return (
