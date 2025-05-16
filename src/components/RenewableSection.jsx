@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import "./RenewableSection.css";
-import PlusSign from "../assets/RenewableSection/add.svg";
-import MinusSign from "../assets/RenewableSection/minus.svg";
-import Image1 from "../assets/RenewableSection/Image1.jpg";
-import Image2 from "../assets/RenewableSection/Image2.jpg";
+import PlusSign from "/RenewableSection/add.svg";
+import MinusSign from "/RenewableSection/minus.svg";
+import Image1 from "/RenewableSection/Image1.jpg";
+import Image2 from "/RenewableSection/Image2.jpg";
 
 function RenewableSection() {
   const [show1, setShow1] = useState(false);
