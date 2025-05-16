@@ -95,7 +95,7 @@ const BlogCard = () => {
                   onClick={() => handleNavigate(card.id)}
                 >
                   <div className="bg-[#7b78f7] text-white p-4 rounded-full cursor-pointer shadow-md">
-                    <FaArrowRight />
+                    <FaArrowRight className="rotate-320" />
                   </div>
                 </div>
               </div>
