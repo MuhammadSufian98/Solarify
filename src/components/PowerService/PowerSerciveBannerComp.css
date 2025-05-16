@@ -1,0 +1,71 @@
+@font-face {
+  font-family: "Outfit";
+  src: url("./assets/fonts/Outfit-VariableFont_wght.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+.Banner {
+  font-family: "Outfit", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  height: 400px;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+.BannerHeadingDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 200px;
+  margin: 0 auto;
+}
+.BannerHeading {
+  font-size: 30px;
+  font-weight: 600;
+  color: rgb(12, 12, 60);
+}
+
+.BannerPara {
+  text-align: justify;
+  font-size: 20px;
+  font-weight: 500;
+  color: #3b3b3b;
+}
+.OuterBannerIconDiv {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 260px;
+  height: 50px;
+  margin: 100px 180px 20px 0px;
+}
+.BannerIconDiv {
+  background-color: #7b78f7;
+  padding: 15px;
+  transition: background-color 0.3s ease;
+  border-radius: 25px;
+}
+.Icon {
+  width: 30px;
+}
+.Banner:hover {
+  background-color: #7b78f7;
+}
+
+.Banner:hover .BannerIconDiv {
+  background-color: #ffffff;
+}
+.Banner:hover .BannerHeading,
+.Banner:hover .BannerPara {
+  color: #ffffff;
+}
+.Banner:hover .Icon {
+  filter: brightness(0) saturate(100%) invert(23%) sepia(84%) saturate(749%)
+    hue-rotate(218deg) brightness(97%) contrast(101%);
+}
