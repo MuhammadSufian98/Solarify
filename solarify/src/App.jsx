@@ -26,10 +26,8 @@ const router = createBrowserRouter([
     path: "/",
     element: <MainLayout />,
     children: [
-      { path: "/", element: <Home /> }, // shows Home at "/"
-      { path: "/mainpage", element: <CompletePage /> }, // shows Main at "/mainpage"
-      {path:"/about",element:<About/>}
-
+      { path: "/", element: <CompletePage /> }, // shows Main at "/mainpage"
+      { path: "/about", element: <About /> },
     ],
   },
 ]);
