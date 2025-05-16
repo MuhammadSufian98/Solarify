@@ -9,6 +9,7 @@ import Home from "./Pages/Home.jsx";
 import About from "./Pages/About.jsx";
 import Footer from "./components/Footer.jsx";
 import Blogs from "./Pages/Blogs.jsx";
+import BlogDetail from "./components/blog/BlogDetail.jsx";
 
 // Layout Component
 const MainLayout = () => {
@@ -30,6 +31,7 @@ const router = createBrowserRouter([
       { path: "/", element: <CompletePage /> },
       { path: "/about", element: <About /> },
       { path: "/blog", element: <Blogs /> },
+      { path: "/blogdetail/:id", element: <BlogDetail /> },
     ],
   },
 ]);
