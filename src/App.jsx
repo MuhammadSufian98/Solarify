@@ -38,7 +38,7 @@ const router = createBrowserRouter([
 <<<<<<< HEAD
       {path:"/project",element:<Project/>}
 =======
-      { path: "/blogdetail/:id", element: <BlogDetail /> },
+      { path: "/blogdetail", element: <BlogDetail /> },
 >>>>>>> e53433c89bf488de244fc92c2e258a45734302f0
     ],
   },
