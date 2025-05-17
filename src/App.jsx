@@ -3,12 +3,12 @@ import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 
 // Import components
 import Navbar from "./components/Navbar.jsx";
-// Fix path if needed
 import CompletePage from "./Pages/CompletePage.jsx";
 import Home from "./Pages/Home.jsx";
 import About from "./Pages/About.jsx";
 import Footer from "./components/Footer.jsx";
 import Blogs from "./Pages/Blogs.jsx";
+import Project from "./Pages/Project.jsx";
 <<<<<<< HEAD
 import Project from "./Pages/Project.jsx";
 =======
@@ -35,6 +35,8 @@ const router = createBrowserRouter([
       { path: "/", element: <CompletePage /> },
       { path: "/about", element: <About /> },
       { path: "/blog", element: <Blogs /> },
+      { path: "/project", element: <Project /> },
+      { path: "/blogdetail", element: <BlogDetail /> },
 <<<<<<< HEAD
       {path:"/project",element:<Project/>}
 =======
