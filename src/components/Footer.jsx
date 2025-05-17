@@ -38,7 +38,7 @@ const Footer = () => {
             {/* Right Side Button */}
             <div className="flex flex-col absolute -bottom-80 right-0 items-start md:items-end z-10">
               <h1 className="text-[60px] md:text-[100px]  font-semibold leading-none">TOUCH</h1>
-              <button className="group mt-4 inline-flex items-center bg-blue-400 text-white font-semibold text-lg rounded-full px-6 py-3 transition-all duration-300 hover:bg-white hover:text-blue-950 shadow-lg">
+              <button className="group mt-4 inline-flex cursor-pointer items-center bg-blue-400 text-white font-semibold text-lg rounded-full px-6 py-3 transition-all duration-300 hover:bg-white hover:text-blue-950 shadow-lg">
                 <span className="transition-all duration-300 group-hover:pr-3">
                   View Services
                 </span>
