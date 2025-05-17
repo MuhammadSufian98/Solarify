@@ -70,7 +70,7 @@ export default function Navbar() {
                   <li>
                     <Link
                       className="whitespace-nowrap hover:text-blue-300 transition duration-200"
-                      to="/blogdetails"
+                      to="/blogdetail"
                     >
                       Blog Details
                     </Link>
