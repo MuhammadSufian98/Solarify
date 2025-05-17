@@ -3,7 +3,7 @@ import { MdArrowOutward } from "react-icons/md";
 
 const Hero = () => {
   return (
-    <div className="w-full min-h-screen bg-white">
+    <div className="w-full :min-h-screen bg-white">
       <div className="w-[70%] mx-auto flex flex-col lg:flex-row justify-between items-center py-10 gap-12">
         {/* Left Section */}
         <div className="flex flex-col gap-6 items-center lg:items-start max-w-2xl">

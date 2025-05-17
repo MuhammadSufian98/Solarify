@@ -15,6 +15,6 @@ function CompletePage() {
       <RenewableSection />
     </>
   );
-}
+} 
 
 export default CompletePage;
