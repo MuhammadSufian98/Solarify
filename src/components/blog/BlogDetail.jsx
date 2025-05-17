@@ -24,8 +24,8 @@ const blogPosts = [
     author: "Jane Smith",
     date: "Mar 9, 2024"
   },
-  {
-    id: "2",
+{
+  id: "2",
     title: "Benefits of switching to renewable energy today",
     content: "",
     tittelone: "Why Switch to Renewable Energy?",

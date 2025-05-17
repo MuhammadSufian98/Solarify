@@ -8,12 +8,8 @@ import Home from "./Pages/Home.jsx";
 import About from "./Pages/About.jsx";
 import Footer from "./components/Footer.jsx";
 import Blogs from "./Pages/Blogs.jsx";
-import Project from "./Pages/Project.jsx";
-<<<<<<< HEAD
-import Project from "./Pages/Project.jsx";
-=======
 import BlogDetail from "./components/blog/BlogDetail.jsx";
->>>>>>> e53433c89bf488de244fc92c2e258a45734302f0
+import Project from "./Pages/Project.jsx";
 
 // Layout Component
 const MainLayout = () => {
@@ -36,12 +32,7 @@ const router = createBrowserRouter([
       { path: "/about", element: <About /> },
       { path: "/blog", element: <Blogs /> },
       { path: "/project", element: <Project /> },
-      { path: "/blogdetail", element: <BlogDetail /> },
-<<<<<<< HEAD
-      {path:"/project",element:<Project/>}
-=======
-      { path: "/blogdetail", element: <BlogDetail /> },
->>>>>>> e53433c89bf488de244fc92c2e258a45734302f0
+      { path: "/blogdetail/:id", element: <BlogDetail /> },
     ],
   },
 ]);
