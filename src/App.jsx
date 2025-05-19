@@ -14,6 +14,8 @@ import ProjectDetail from "./Pages/ProjectDetail.jsx";
 import PrivacyTerms from "./components/PrivacyTerms.jsx";
 import TermsConditions from "./components/TermsConditions.jsx";
 import PageNotFound from "./components/PageNotFound.jsx";
+import Contact from "./Pages/Contact.jsx";
+import Faq from "./components/Faq.jsx";
 
 import Services from "./Pages/Services.jsx";
 
@@ -45,6 +47,8 @@ const router = createBrowserRouter([
       {path:"/termsconditions",element:<TermsConditions/>},
       {path:"/pagenotfound",element:<PageNotFound/>},
       { path: "/services", element: <Services/> },
+      {path:"/faq",element:<Faq/>},
+      {path:"/contact",element:<Contact/>},
     ],
   },
 ]);

@@ -19,9 +19,6 @@ const PageNotFound = () => {
         <h2 className="text-2xl md:text-4xl font-semibold text-[#0C0C3C]">
           Page not found
         </h2>
-        <p className="text-[#576067] text-base md:text-lg max-w-md mx-auto px-4">
-          Go back to the homepage and navigate to the desired page from there.
-        </p>
         <Link
           to="/"
           className="inline-block font-semibold px-6 py-3 text-white bg-[#7b78f7] hover:bg-[#0C0C3C] rounded-full transition"

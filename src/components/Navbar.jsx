@@ -132,7 +132,7 @@ export default function Navbar() {
                   <li className="py-2">
                     <Link
                       className="whitespace-nowrap hover:text-blue-300 transition duration-200"
-                      to="/privacy"
+                      to="/privacyterms"
                     >
                       Privacy
                     </Link>
@@ -140,7 +140,7 @@ export default function Navbar() {
                   <li className="py-2">
                     <Link
                       className="hover:text-blue-300 transition duration-200"
-                      to="/terms"
+                      to="/termsconditions"
                     >
                       Terms
                     </Link>
@@ -148,7 +148,7 @@ export default function Navbar() {
                   <li className="py-2">
                     <Link
                       className="whitespace-nowrap hover:text-blue-300 transition duration-200"
-                      to="/notFound"
+                      to="/pagenotfound"
                     >
                       404
                     </Link>
@@ -158,13 +158,14 @@ export default function Navbar() {
             )}
           </Link>
 
-          <button
+          
+          <Link to="/contact"
             className={`navContactBTN ${
               menuOpen ? "displayNone" : "displayBlock"
             }`}
           >
             Contact Now
-          </button>
+          </Link>
         </div>
       </div>
     </div>
