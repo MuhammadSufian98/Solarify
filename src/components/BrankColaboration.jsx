@@ -21,6 +21,18 @@ function BrankColaboration() {
     arrows: false,
     dots: false,
   };
+
+  const Almal ={
+    infinite:true,
+    speed:10000,
+    SlidestoShow:3,
+    SlidestoScroll:1,
+    autoplay:true,
+    autoplayspeed:0,
+    cssEase:"circular",
+    arrows:false,
+    dots:false,
+  }
   return (
     <div className="brandColab">
       <div className="brandColabDiv">

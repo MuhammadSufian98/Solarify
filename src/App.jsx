@@ -3,12 +3,18 @@ import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 
 // Import components
 import Navbar from "./components/Navbar.jsx";
-// Fix path if needed
 import CompletePage from "./Pages/CompletePage.jsx";
 import Home from "./Pages/Home.jsx";
 import About from "./Pages/About.jsx";
 import Footer from "./components/Footer.jsx";
 import Blogs from "./Pages/Blogs.jsx";
+import Project from "./Pages/Project.jsx";
+import BlogDetail from "./components/blog/BlogDetail.jsx";
+import ProjectDetail from "./Pages/ProjectDetail.jsx";
+import PrivacyTerms from "./components/PrivacyTerms.jsx";
+import TermsConditions from "./components/TermsConditions.jsx";
+import PageNotFound from "./components/PageNotFound.jsx";
+
 import Services from "./Pages/Services.jsx";
 
 // Layout Component
@@ -31,6 +37,13 @@ const router = createBrowserRouter([
       { path: "/", element: <CompletePage /> },
       { path: "/about", element: <About /> },
       { path: "/blog", element: <Blogs /> },
+      { path: "/blogdetail/:id", element: <BlogDetail /> },
+      { path: "/blogdetail/", element: <BlogDetail /> },
+      { path: "/project", element: <Project /> },
+      {path:"/projectDetail",element:<ProjectDetail/>},
+      {path:"/privacyterms",element:<PrivacyTerms/>},
+      {path:"/termsconditions",element:<TermsConditions/>},
+      {path:"/pagenotfound",element:<PageNotFound/>},
       { path: "/services", element: <Services/> },
     ],
   },
