@@ -17,6 +17,7 @@ import PageNotFound from "./components/PageNotFound.jsx";
 import Contact from "./Pages/Contact.jsx";
 import Faq from "./components/Faq.jsx";
 
+import Services from "./Pages/Services.jsx";
 
 // Layout Component
 const MainLayout = () => {
@@ -45,6 +46,7 @@ const router = createBrowserRouter([
       {path:"/privacyterms",element:<PrivacyTerms/>},
       {path:"/termsconditions",element:<TermsConditions/>},
       {path:"/pagenotfound",element:<PageNotFound/>},
+      { path: "/services", element: <Services/> },
       {path:"/faq",element:<Faq/>},
       {path:"/contact",element:<Contact/>},
     ],
