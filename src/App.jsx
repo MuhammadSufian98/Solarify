@@ -3,8 +3,7 @@ import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 
 // Import components
 import Navbar from "./components/Navbar.jsx";
-import CompletePage from "./Pages/CompletePage.jsx";
-import Home from "./Pages/Home.jsx";
+import CompletePage from "./Pages/CompletePage.jsx";;
 import About from "./Pages/About.jsx";
 import Footer from "./components/Footer.jsx";
 import Blogs from "./Pages/Blogs.jsx";
@@ -45,10 +44,10 @@ const router = createBrowserRouter([
       {path:"/projectDetail",element:<ProjectDetail/>},
       {path:"/privacyterms",element:<PrivacyTerms/>},
       {path:"/termsconditions",element:<TermsConditions/>},
-      {path:"/pagenotfound",element:<PageNotFound/>},
       { path: "/services", element: <Services/> },
       {path:"/faq",element:<Faq/>},
       {path:"/contact",element:<Contact/>},
+      {path:"/pagenotfound",element:<PageNotFound/>},
     ],
   },
 ]);

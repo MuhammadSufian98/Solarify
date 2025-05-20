@@ -16,7 +16,7 @@ const Hero = () => {
             reducing energy loss and enhancing light absorption.
           </p>
 
-          <button className="group cursor-pointer inline-flex items-center bg-blue-500 text-white font-semibold text-lg rounded-full px-6 py-3 transition-all duration-300 hover:bg-white hover:text-blue-900 border-2 border-blue-500 shadow-lg">
+          <button className="group cursor-pointer inline-flex items-center bg-blue-500 text-white font-semibold text-lg rounded-full px-4 py-2 md:px-6 md:py-3 transition-all duration-300 hover:bg-white hover:text-blue-900 border-2 border-blue-500 shadow-lg">
             <span className="transition-all duration-300 group-hover:pr-3">
               Contact Now
             </span>
@@ -35,8 +35,8 @@ const Hero = () => {
           />
 
           {/* Rotating div with circular text and background image */}
-          <div className="absolute top-40 -left-10 rounded-full p-1 border border-gray-400 animate-spin">
-            <div className="relative w-10 h-10 sm:w-24 sm:h-24 rounded-full bg-[url('/About/rotating1.jpg')] bg-cover bg-center shadow-md">
+          <div className="absolute top-40 -left-8 md:-left-10 rounded-full p-1 border border-gray-400 animate-spin">
+            <div className="relative w-16 h-16 sm:w-24 sm:h-24 rounded-full bg-[url('/About/rotating1.jpg')] bg-cover bg-center shadow-md">
               <svg
                 viewBox="0 0 100 100"
                 className="absolute top-0 left-0 w-full h-full"

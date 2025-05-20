@@ -2,21 +2,18 @@ import { LuArrowUpRight } from 'react-icons/lu';
 import { Link } from 'react-router-dom';
 
 
-
 const Hero = () => {
     return (
         <div className="w-full min-h-screen bg-white py-12 ">
             <div className="w-[90%] max-w-8xl  flex flex-col lg:flex-row gap-12 ">
                 {/* Left Section */}
                 <div className="flex flex-col gap-8  lg:gap-y-26  max-w-2xl">
-                    <h1 className="lg:text-8xl sm:text-6xl font-extrabold text-[#0a0a2f] leading-tight !m-0">
-                        OUR <br /> SERVICES<span className="text-[#0a0a2f]">.</span>
+                    <h1 className="text-4xl md:text-6xl lg:text-8xl font-extrabold text-[#0a0a2f] leading-tight !m-0">
+                         OUR <br /> SERVICES <span className="text-[#0a0a2f]">.</span>
                     </h1>
-
                     <div className="flex flex-col gap-6  max-w-sm !m-0">
                         <p className="text-gray-600 text-lg">
-                            Unlike fossil fuels, which are finite and contribute to environmental degradation,
-                            this renewable option is natural.
+                            Unlike fossil fuels, which are finite and contribute to environmental degradation, this renewable option is natural.
                         </p>
                         
 
@@ -48,16 +45,16 @@ const Hero = () => {
                 </div>
 
                 {/* Right Section (Image + Rotating Badge) */}
-                <div className="relative w-full max-w-md">
+                <div className="relative w-full max-w-md h-[60vh] md:!h-[90vh]">
                     <img
                         src="/Services/1.png"
-                        alt="Solar Service"
-                        className="rounded-3xl shadow-lg w-full h-auto"
+                        alt="Services"
+                        className="rounded-3xl shadow-lg w-full h-[60vh] md:!h-[90vh] object-cover"
                     />
 
                     {/* Rotating div with circular text and background image */}
                     <div className="absolute top-58 -left-12 max-md:left-[-12px] rounded-full p-1 border border-gray-400 animate-spin">
-                        <div className="relative w-10 h-10 sm:w-24 sm:h-24 rounded-full bg-[url('/About/rotating1.jpg')] bg-cover bg-center shadow-md">
+                        <div className="relative w-16 h-16 sm:w-24 sm:h-24 rounded-full bg-[url('/About/rotating1.jpg')] bg-cover bg-center shadow-md">
 
                             {/* SVG for circular text */}
                             <svg
@@ -85,21 +82,3 @@ const Hero = () => {
 };
 
 export default Hero;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

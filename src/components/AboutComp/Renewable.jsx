@@ -32,16 +32,16 @@ const Renewable = () => {
               alt="Renewable Intro"
             />
           </div>
-          <div className="flex flex-col gap-6 text-center lg:text-left lg:w-1/2">
-            <h1 className="text-4xl lg:text-5xl font-bold leading-tight">
+          <div className="flex !mt-6 flex-col gap-6 text-center lg:text-left lg:w-1/2">
+            <h1 className="text-2xl lg:text-5xl font-bold leading-tight">
               Solarify the Renewable Energy Pvt. Ltd!
             </h1>
-            <p className="text-lg leading-relaxed">
+            <p className="mt:text-lg leading-relaxed">
               As a leading MNRE-approved ISO 9001:2015 organization, we take immense pride in delivering cutting-edge solar technology to your doorstep. Join us in transitioning to clean and sustainable energy.
             </p>
 
     {/* this button must be shown at the left  */}
-            <button className="float-left group inline-flex items-center w-fit bg-blue-400 text-white font-semibold text-lg rounded-full px-6 py-3 transition-all duration-300 hover:bg-white hover:text-blue-950 shadow-lg cursor-pointer">
+            <button className="float-left group inline-flex items-center w-fit bg-blue-400 text-white font-semibold text-lg rounded-full px-4 py-2 md:px-6 md:py-3 transition-all duration-300 hover:bg-white hover:text-blue-950 shadow-lg cursor-pointer">
               <span className="transition-all duration-300 group-hover:pr-3">Contact Now</span>
               <span className="ml-2 transition-transform duration-300 transform group-hover:translate-x-1 text-xl">
                 <MdArrowOutward />
@@ -60,7 +60,7 @@ const Renewable = () => {
             />
           </div>
           <div className="flex flex-col gap-8 w-full lg:w-1/2">
-            <p className="text-2xl font-bold leading-relaxed">
+            <p className="text-lg md:text-2xl font-bold leading-relaxed">
               Whether you're a small business looking to reduce your carbon footprint or a homeowner interested in saving on electricity bills, Firefly is here to guide you every step of the way with expert, personalized solar solutions.
             </p>
 

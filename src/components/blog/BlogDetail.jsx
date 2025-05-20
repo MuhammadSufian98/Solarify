@@ -199,7 +199,7 @@ const BlogDetail = () => {
         <h2 className="text-[#0C0C3C] font-semibold text-4xl">Blog not found.</h2>
         <button
           onClick={() => navigate("/blog")}
-          className="px-6 py-3 rounded-full bg-blue-400 text-white hover:bg-blue-950 hover:text-white transition-all duration-300 cursor-pointer"
+          className="!mt-6 px-6 py-3 rounded-full bg-blue-400 text-white hover:bg-blue-950 hover:text-white transition-all duration-300 cursor-pointer"
         >
           Back to Blogs
         </button>
@@ -217,11 +217,11 @@ const BlogDetail = () => {
           ← Back to Blogs
         </button>
 
-        <h1 className="text-3xl md:text-4xl font-bold text-[#0C0C3C]">
+        <h1 className="!mt-4 text-3xl md:text-4xl font-bold text-[#0C0C3C]">
           {blog.title}
         </h1>
 
-        <p className="text-sm text-[#525257] font-medium">
+        <p className="text-sm text-[#525257] font-medium !mt-2">
           By <span className="font-semibold">{blog.author}</span> • {blog.date}
         </p>
       </div>
@@ -243,45 +243,45 @@ const BlogDetail = () => {
         {blog.para && <p>{blog.para}</p>}
 
         {blog.headingone && (
-          <h3 className="text-xl md:text-2xl font-semibold text-[#333333] mt-4">
+          <h3 className="!mt-4 text-xl md:text-2xl font-semibold text-[#333333]">
             {blog.headingone}
           </h3>
         )}
         {blog.des && <p>{blog.des}</p>}
 
         {blog.titteltwo && (
-          <h2 className="text-3xl md:text-3xl font-bold text-[#0C0C3C]">
+          <h2 className="!mt-4 text-3xl md:text-3xl font-bold text-[#0C0C3C]">
             {blog.titteltwo}
           </h2>
         )}
         {blog.headingtwo && (
-          <h3 className="text-xl md:text-2xl font-semibold text-[#333333] mt-4">
+          <h3 className="!mt-4 text-xl md:text-2xl font-semibold text-[#333333]">
             {blog.headingtwo}
           </h3>
         )}
         {blog.desc && <p>{blog.desc}</p>}
 
         {blog.tittelthree && (
-          <h2 className="text-3xl md:text-4xl font-bold text-[#0C0C3C]">
+          <h2 className="!mt-4 text-3xl md:text-4xl font-bold text-[#0C0C3C]">
             {blog.tittelthree}
           </h2>
         )}
         {blog.headingthree && (
-          <h3 className="text-xl md:text-2xl font-semibold text-[#333333] mt-4">
+          <h3 className="!mt-4 text-xl md:text-2xl font-semibold text-[#333333]">
             {blog.headingthree}
           </h3>
         )}
         {blog.desct && <p>{blog.desct}</p>}
 
         {blog.headingfour && (
-          <h3 className="text-xl md:text-2xl font-semibold text-[#333333] mt-4">
+          <h3 className="!mt-4 text-xl md:text-2xl font-semibold text-[#333333] ">
             {blog.headingfour}
           </h3>
         )}
         {blog.descti && <p>{blog.descti}</p>}
 
         {blog.headingfive && (
-          <h3 className="text-xl md:text-2xl font-semibold text-[#0C0C3C] mt-4">
+          <h3 className="!mt-4 text-xl md:text-2xl font-semibold text-[#0C0C3C]">
             {blog.headingfive}
           </h3>
         )}

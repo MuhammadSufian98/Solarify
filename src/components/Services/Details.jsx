@@ -50,7 +50,7 @@ const Details = () => {
         {solarServices.map((service, index) => (
           <div
             key={index}
-            className="bg-white rounded-xl shadow-sm p-6 flex flex-col gap-12 hover:shadow-md transition h-90 group hover:bg-[#7b78f7] cursor-pointer"
+            className="bg-white rounded-xl shadow-sm p-6 flex flex-col gap-12 hover:shadow-md transition h-76 md:h-90 group hover:bg-[#7b78f7] cursor-pointer"
           >
             <div className="flex flex-col gap-7">
               <p className="text-2xl font-semibold text-[#0C0C3C] group-hover:text-white transition-colors">

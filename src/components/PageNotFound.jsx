@@ -21,7 +21,7 @@ const PageNotFound = () => {
         </h2>
         <Link
           to="/"
-          className="inline-block font-semibold px-6 py-3 text-white bg-[#7b78f7] hover:bg-[#0C0C3C] rounded-full transition"
+          className="inline-block !mt-6 font-semibold px-6 py-3 text-white bg-[#7b78f7] hover:bg-[#0C0C3C] rounded-full transition"
         >
           Back to Home
         </Link>

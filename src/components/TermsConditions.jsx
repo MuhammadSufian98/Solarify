@@ -9,7 +9,7 @@ export default function TermsConditions() {
         className="relative w-full h-60 md:h-80 bg-cover bg-center flex items-center justify-center"
         style={{ backgroundImage: `url(${PrivacyHero})` }}
       >
-        <h1 className="relative text-white text-3xl sm:text-5xl font-bold z-10">
+        <h1 className="relative text-white text-3xl sm:text-7xl font-bold z-10">
           TERMS & CONDITIONS
         </h1>
       </div>
@@ -23,35 +23,35 @@ export default function TermsConditions() {
           </p>
         </section>
 
-        <section>
+        <section className="!mt-4">
           <h2 className="text-2xl font-bold mb-4 text-[#0C0C3C]">Acceptance of Terms</h2>
           <p className="text-[16px] text-[#576067]">
             By accessing or using the Firefly Templates, the user agrees to be bound by this Agreement. Users explicitly accept these terms and conditions before accessing or using the templates.
           </p>
         </section>
 
-        <section>
+        <section className="!mt-4">
           <h2 className="text-2xl font-bold mb-4 text-[#0C0C3C]">License</h2>
           <p className="text-[16px] text-[#576067]">
             The provider grants the user a non-exclusive, non-transferable license to use the templates for internal business purposes only. Users may not sublicense, distribute, or transfer the templates to any third party without prior written consent from the provider.
           </p>
         </section>
 
-        <section>
+        <section className="!mt-4">
           <h2 className="text-2xl font-bold mb-4 text-[#0C0C3C]">Payment Terms</h2>
           <p className="text-[16px] text-[#576067]">
             The pricing, billing, and payment methods for accessing the templates are outlined in the pricing plan chosen by the user. Additional fees, taxes, or charges may apply and will be communicated accordingly.
           </p>
         </section>
 
-        <section>
+        <section className="!mt-4">
           <h2 className="text-2xl font-bold mb-4 text-[#0C0C3C]">Your Rights</h2>
           <p className="text-[16px] text-[#576067]">
             You have the right to access, update, or delete your personal information held by us. If you would like to exercise these rights or have any questions about our Privacy Policy, please contact us using the information provided below.
           </p>
         </section>
 
-        <section>
+        <section className="!mt-4">
           <h2 className="text-2xl font-bold mb-4 text-[#0C0C3C]">Disclaimer of Warranties</h2>
           <p className="text-[16px] text-[#576067]">
             We strive to provide accurate and up-to-date information on our website, but make no representations or warranties of any kind—express or implied—regarding the completeness, accuracy, reliability, or availability of the website or its contents. Use is at your own risk. We disclaim any implied warranties, including merchantability, fitness for a particular purpose, and non-infringement.

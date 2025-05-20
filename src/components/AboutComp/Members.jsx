@@ -56,7 +56,7 @@ const Members = () => {
       <div className="max-w-7xl mx-auto flex flex-col gap-12">
         {/* Header Section */}
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-800 max-w-xl leading-tight">
+          <h1 className="text-3xl md:text-5xl font-bold text-gray-800 max-w-xl leading-tight">
             Best team members for solar energy.
           </h1>
 

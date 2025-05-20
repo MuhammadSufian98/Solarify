@@ -8,7 +8,7 @@ const Hero = () => {
       style={{ backgroundImage: `url(${PrivacyHero})` }}
     >
       {/* Background Image with Text */}
-      <h1 className="relative text-white text-3xl sm:text-5xl font-bold z-10">
+      <h1 className="relative text-white text-4xl sm:text-8xl font-bold z-10">
         CONTACT US
       </h1>
     </div>

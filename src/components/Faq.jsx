@@ -52,7 +52,7 @@ const Faq = () => {
         className="relative w-full h-60 md:h-80 bg-cover bg-center flex items-center justify-center"
         style={{ backgroundImage: `url('/privecy.webp')` }}
       >
-        <h1 className="relative text-white text-3xl sm:text-6xl font-bold z-10">
+        <h1 className="relative text-white text-5xl md:text-9xl font-bold z-10">
           FAQ
         </h1>
       </div>
@@ -66,10 +66,10 @@ const Faq = () => {
                 onClick={() => toggleFaq(index)}
                 className="flex w-full items-center justify-between px-6 py-4 text-left focus:outline-none"
               >
-                <span className="text-sm md:text-lg font-semibold text-[#0C0C3C]">
+                <span className="!-ml-6 text-sm md:text-lg font-semibold text-[#0C0C3C]">
                   {item.question}
                 </span>
-                <span className={`text-xl border rounded-full p-2 w-6 h-6 flex items-center justify-center cursor-pointer`}>
+                <span className={`!-mr-2 text-xl border rounded-full p-2 w-6 h-6 flex items-center justify-center cursor-pointer`}>
                   {openFaq === index ? '−' : '+'}
                 </span>
               </button>
@@ -77,7 +77,7 @@ const Faq = () => {
               {openFaq === index && (
                 <div className="px-6 pt-2 text-gray-700">
                   <p className="font-semibold  text-[#0C0C3C] mb-1">Answer:</p>
-                  <p>{item.answer}</p>
+                  <p className="text-sx text-[#0C0C3C] mb-1">{item.answer}</p>
                 </div>
               )}
             </div>

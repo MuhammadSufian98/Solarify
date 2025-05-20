@@ -9,6 +9,24 @@ import { Link } from "react-router-dom";
 import { MdArrowOutward } from "react-icons/md";
 
 const Footer = () => {
+  const navLinks = [
+    { to: "/home", label: "Home" },
+    { to: "/project", label: "Project" },
+    { to: "/service", label: "Service" },
+    { to: "/about", label: "About" },
+    { to: "/contact", label: "Contact" },
+    { to: "/blog", label: "Blog" },
+    { to: "/privacy", label: "Privacy" },
+    { to: "/faq", label: "FAQ" },
+    { to: "/pagenotfound", label: "Not Found 404" },
+  ];
+
+  const socialIcons = [
+    { icon: <FaTwitter />, name: "Twitter" },
+    { icon: <FaFacebookSquare />, name: "Facebook" },
+    { icon: <FaInstagram />, name: "Instagram" },
+    { icon: <FaGithub />, name: "Github" },
+  ];
   return (
     <footer className="w-full  bg-gray-100 pt-20 flex flex-col bottom-0  relative z-10 overflow-visible">
 
@@ -37,8 +55,8 @@ const Footer = () => {
 
             {/* Right Side Button */}
             <div className="flex flex-col absolute -bottom-80 right-0 items-start md:items-end z-10">
-              <h1 className="text-[60px] md:text-[100px]  font-semibold leading-none">TOUCH</h1>
-              <button className="group mt-4 inline-flex cursor-pointer items-center bg-blue-400 text-white font-semibold text-lg rounded-full px-6 py-3 transition-all duration-300 hover:bg-white hover:text-blue-950 shadow-lg">
+              <h1 className="text-[50px] md:text-[100px] font-semibold md:leading-none">TOUCH</h1>
+              <button className="group !mt-4 inline-flex cursor-pointer items-center bg-blue-400 text-white font-semibold text-lg rounded-full px-6 py-3 transition-all duration-300 hover:bg-white hover:text-blue-950 shadow-lg">
                 <span className="transition-all duration-300 group-hover:pr-3">
                   View Services
                 </span>
@@ -59,25 +77,29 @@ const Footer = () => {
         {/* Navigation Links */}
         <nav className="w-full sm:w-auto">
           <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-7 text-sm sm:text-base font-semibold text-gray-700 text-center sm:text-left">
-            <li><Link to="/home" className="hover:text-blue-600 transition">Home</Link></li>
-            <li><Link to="/project" className="hover:text-blue-600 transition">Project</Link></li>
-            <li><Link to="/service" className="hover:text-blue-600 transition">Service</Link></li>
-            <li><Link to="/about" className="hover:text-blue-600 transition">About</Link></li>
-            <li><Link to="/contact" className="hover:text-blue-600 transition">Contact</Link></li>
-            <li><Link to="/blog" className="hover:text-blue-600 transition">Blog</Link></li>
-            <li><Link to="/privacy" className="hover:text-blue-600 transition">Privacy</Link></li>
-            <li><Link to="/faq" className="hover:text-blue-600 transition">FAQ</Link></li>
-            <li><Link to="/404" className="hover:text-blue-600 transition">Not Found 404</Link></li>
+            {navLinks.map((link) => (
+              <li key={link.to}>
+                <Link to={link.to} className="hover:text-blue-600 transition">
+                  {link.label}
+                </Link>
+              </li>
+            ))}
           </ul>
         </nav>
 
         {/* Social Icons */}
-        <div className="flex flex-col items-center  pt-10 gap-4">
+
+        <div className="flex flex-col items-center pt-10 gap-4">
           <div className="flex gap-4">
-            <span className="p-3 border border-gray-300 transition duration-300 cursor-pointer text-gray-700 text-xl hover:bg-gray-700 hover:text-white rounded-full"><FaTwitter /></span>
-            <span className="p-3 border border-gray-300 transition duration-300 cursor-pointer text-gray-700 text-xl hover:bg-gray-700 hover:text-white rounded-full"><FaFacebookSquare /></span>
-            <span className="p-3 border border-gray-300 transition duration-300 cursor-pointer text-gray-700 text-xl hover:bg-gray-700 hover:text-white rounded-full"><FaInstagram /></span>
-            <span className="p-3 border border-gray-300 transition duration-300 cursor-pointer text-gray-700 text-xl hover:bg-gray-700 hover:text-white rounded-full"><FaGithub /></span>
+            {socialIcons.map((item, index) => (
+              <span
+                key={index}
+                className="p-3 border border-gray-300 transition duration-300 cursor-pointer text-gray-700 text-xl hover:bg-gray-700 hover:text-white rounded-full"
+                aria-label={item.name}
+              >
+                {item.icon}
+              </span>
+            ))}
           </div>
           <p className="text-sm sm:text-base font-medium text-gray-600 text-center">
             © 2025 Pentaclay. All rights reserved.

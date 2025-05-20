@@ -50,8 +50,8 @@ const Bright = (identity) => {
       <div className="w-[70%] mx-auto flex flex-col gap-10 ">
 
         {brightArray.map((identity)=>(
-             <div className="rounded-md w-full  ">
-          <div className="flex sm:flex-row bg-white flex-col ga-5 h-130 sm:h-80">
+             <div className="!rounded-md w-full  ">
+          <div className="flex sm:flex-row rounded-2xl bg-white flex-col ga-5 h-130 sm:h-80">
             <div className="sm:w-1/2 w-full  rounded-md overflow-hidden cursor-pointer sm:h-full">
               <img
                 className="w-full rounded-md h-full hover:scale-120 transition duration-200 object-orient object-cover  bg-center"
@@ -59,14 +59,14 @@ const Bright = (identity) => {
                 alt=""
               />
             </div>
-            <div className="p-5 w-full sm:w-1/2 flex  flex-col items-center">
-              <h1 className="text-2xl py-2 font-semibold ">
+            <div className="p-5 w-full sm:w-1/2 flex  flex-col items-center ">
+              <h1 className="text-xl md:text-2xl py-2 font-semibold ">
                 {identity.heading}
               </h1>
-              <p className="text-lg text-center pb-10 max-w-md text-gray-500">
+              <p className="text-sx md:text-lg text-center pb-10 max-w-md text-gray-500">
                 {identity.para}
               </p>
-              <span className="px-5 py-3 border rounded-full text-md font-semibold hover:bg-blue-600 cursor-pointer hover:text-white transition duration-300 hover:border-gray-300">
+              <span className="px-3 py-2 md:px-5 md:py-3 border rounded-full text-md font-semibold hover:bg-blue-600 cursor-pointer hover:text-white transition duration-300 hover:border-gray-300">
                 View Details
               </span>
             </div>
