@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { FaQuoteLeft } from "react-icons/fa";
 import { IoArrowBack, IoArrowForward, } from "react-icons/io5";
 
 const reviews = [
@@ -41,44 +42,46 @@ const Reviews = () => {
   };
 
   return (
-    <section className="py-20 px-4 bg-white flex flex-col items-center pb-150">
-      <h2 className="text-4xl font-bold text-center text-[#0C0C3C] !mb-15">
+    <section className="py-20 px-4 bg-white flex flex-col items-center">
+      <h2 className="md:text-5xl text-3xl  leading-tight font-semibold text-center text-[#0C0C3C] !mb-15 text-nowrap">
         Powering voices of <br /> satisfaction our clients.
       </h2>
 
-      <div className="flex flex-col lg:flex-row items-center  gap-22  max-w-8xl w-full bg-amber-300">
+      <div className="flex flex-col lg:flex-row items-center  gap-22  max-w-7xl w-full ">
         {/* Images */}
-        <div className="relative w-full lg:w-1/2 flex justify-start bg-red-500">
+        <div className="relative w-full lg:w-1/2 flex !m-0 ">
           <img
             src={current.Image1}
             alt={current.name}
-            className="w-85 h-105  rounded-xl transform rotate-[-10deg] shadow-lg"
+            className="md:w-85 md:h-105 w-60 h-70  rounded-xl transform rotate-[-10deg] shadow-lg !m-0 !mx-8"
           />
-          {/* <img
+          <img
             src={current.Image2}
             alt="secondary"
-            className="w-65 h-80  rounded-xl transform rotate-[6deg] absolute top-10 left-88 shadow-md"
-          /> */}
+            className="md:w-65 md:h-80 w-40 h-60 rounded-xl transform rotate-[10deg] absolute top-10 md:right-13 right-1 shadow-md !m-0"
+          />
         </div>
 
         {/* Quote */}
-        <div className="w-full lg:w-2/5 bg-blue-300">
+        <div className="w-full lg:w-2/5  !m-0 ">
           <span className="text-5xl text-[#7b78f7] !mb-4 block">❝</span>
-          <p className="text-lg text-gray-700 leading-relaxed !mb-6">{current.quote}</p>
+          {/* <span className="text-5xl text-[#7b78f7] !mb-4 block"><FaQuoteLeft /></span> */}
+          
+          <p className="text-xl text-gray-700 leading-relaxed !mb-6">{current.quote}</p>
           <p className="font-bold text-xl text-[#0C0C3C]">{current.name}</p>
-          <p className="text-gray-500">{current.location}</p>
+          <p className="text-gray-600 font-semibold">{current.location}</p>
 
           {/* Navigation Buttons */}
-          <div className="flex justify-start w-[20%] !mt-6">
+          <div className="flex justify-start w-[30%] !mt-6 !m-0 ">
             <button
               onClick={handlePrev}
-              className=" p-2 rounded-full cursor-pointer border border-gray-300 flex items-center justify-center hover:bg-[#7b78f7] hover:text-white transition"
+              className=" p-3 rounded-full cursor-pointer border border-gray-300 flex items-center justify-center hover:bg-[#7b78f7] hover:text-white transition"
             >
               <IoArrowBack size={20} />
             </button>
             <button
               onClick={handleNext}
-              className="p-2 rounded-full cursor-pointer border border-gray-300 flex items-center justify-center hover:bg-[#7b78f7] hover:text-white transition"
+              className="p-3 rounded-full cursor-pointer border border-gray-300 flex items-center justify-center hover:bg-[#7b78f7] hover:text-white transition"
             >
               <IoArrowForward size={20} />
             </button>
