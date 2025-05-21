@@ -24,8 +24,8 @@ const blogPosts = [
     author: "Jane Smith",
     date: "Mar 9, 2024"
   },
-{
-  id: "2",
+  {
+    id: "2",
     title: "Benefits of switching to renewable energy today",
     content: "",
     tittelone: "Why Switch to Renewable Energy?",
@@ -195,11 +195,11 @@ const BlogDetail = () => {
 
   if (!blog) {
     return (
-       <div className="text-center py-24">
-        <h2 className="text-[#a17d29] font-semibold text-2xl">Blog not found.</h2>
+      <div className="text-center py-24 space-y-12">
+        <h2 className="text-[#0C0C3C] font-semibold text-4xl">Blog not found.</h2>
         <button
           onClick={() => navigate("/blog")}
-          className="mt-6 px-6 py-3 bg-[#a17d29] text-white rounded-lg hover:bg-[#8c681f] transition"
+          className="!mt-6 px-6 py-3 rounded-full bg-blue-400 text-white hover:bg-blue-950 hover:text-white transition-all duration-300 cursor-pointer"
         >
           Back to Blogs
         </button>
@@ -208,86 +208,86 @@ const BlogDetail = () => {
   }
 
   return (
-   <div className="max-w-4xl mx-auto px-4 py-16">
-  <div className="space-y-4 bottom-8 relative">
-    <button
-      onClick={() => navigate(-1)}
-      className="text-[#7b78f7] font-semibold hover:underline cursor-pointer"
-    >
-      ← Back to Blogs
-    </button>
+    <div className="max-w-4xl mx-auto px-4 py-16">
+      <div className="space-y-4 bottom-8 relative">
+        <button
+          onClick={() => navigate(-1)}
+          className="text-[#7b78f7] font-semibold hover:underline cursor-pointer"
+        >
+          ← Back to Blogs
+        </button>
 
-    <h1 className="text-3xl md:text-4xl font-bold text-[#0C0C3C]">
-      {blog.title}
-    </h1>
+        <h1 className="!mt-4 text-3xl md:text-4xl font-bold text-[#0C0C3C]">
+          {blog.title}
+        </h1>
 
-    <p className="text-sm text-[#525257] font-medium">
-      By <span className="font-semibold">{blog.author}</span> • {blog.date}
-    </p>
-  </div>
+        <p className="text-sm text-[#525257] font-medium !mt-2">
+          By <span className="font-semibold">{blog.author}</span> • {blog.date}
+        </p>
+      </div>
 
-  <img
-    src={blog.image}
-    alt={blog.title}
-    className="rounded-xl w-full h-64 md:h-80 object-cover shadow-lg mb-12"
-  />
+      <img
+        src={blog.image}
+        alt={blog.title}
+        className="rounded-xl w-full h-64 md:h-80 object-cover shadow-lg mb-12"
+      />
 
-  <div className="text-[#333] text-md md:text-lg leading-8 space-y-12 relative top-10">
-    {blog.content && <p>{blog.content}</p>}
+      <div className="text-[#333] text-md md:text-lg leading-8 space-y-12 relative top-10">
+        {blog.content && <p>{blog.content}</p>}
 
-    {blog.tittelone && (
-      <h2 className="text-3xl md:text-4xl font-bold text-[#0C0C3C]">
-        {blog.tittelone}
-      </h2>
-    )}
-    {blog.para && <p>{blog.para}</p>}
+        {blog.tittelone && (
+          <h2 className="text-3xl md:text-4xl font-bold text-[#0C0C3C]">
+            {blog.tittelone}
+          </h2>
+        )}
+        {blog.para && <p>{blog.para}</p>}
 
-    {blog.headingone && (
-      <h3 className="text-xl md:text-2xl font-semibold text-[#333333] mt-4">
-        {blog.headingone}
-      </h3>
-    )}
-    {blog.des && <p>{blog.des}</p>}
+        {blog.headingone && (
+          <h3 className="!mt-4 text-xl md:text-2xl font-semibold text-[#333333]">
+            {blog.headingone}
+          </h3>
+        )}
+        {blog.des && <p>{blog.des}</p>}
 
-    {blog.titteltwo && (
-      <h2 className="text-3xl md:text-3xl font-bold text-[#0C0C3C]">
-        {blog.titteltwo}
-      </h2>
-    )}
-    {blog.headingtwo && (
-      <h3 className="text-xl md:text-2xl font-semibold text-[#333333] mt-4">
-        {blog.headingtwo}
-      </h3>
-    )}
-    {blog.desc && <p>{blog.desc}</p>}
+        {blog.titteltwo && (
+          <h2 className="!mt-4 text-3xl md:text-3xl font-bold text-[#0C0C3C]">
+            {blog.titteltwo}
+          </h2>
+        )}
+        {blog.headingtwo && (
+          <h3 className="!mt-4 text-xl md:text-2xl font-semibold text-[#333333]">
+            {blog.headingtwo}
+          </h3>
+        )}
+        {blog.desc && <p>{blog.desc}</p>}
 
-    {blog.tittelthree && (
-      <h2 className="text-3xl md:text-4xl font-bold text-[#0C0C3C]">
-        {blog.tittelthree}
-      </h2>
-    )}
-    {blog.headingthree && (
-      <h3 className="text-xl md:text-2xl font-semibold text-[#333333] mt-4">
-        {blog.headingthree}
-      </h3>
-    )}
-    {blog.desct && <p>{blog.desct}</p>}
+        {blog.tittelthree && (
+          <h2 className="!mt-4 text-3xl md:text-4xl font-bold text-[#0C0C3C]">
+            {blog.tittelthree}
+          </h2>
+        )}
+        {blog.headingthree && (
+          <h3 className="!mt-4 text-xl md:text-2xl font-semibold text-[#333333]">
+            {blog.headingthree}
+          </h3>
+        )}
+        {blog.desct && <p>{blog.desct}</p>}
 
-    {blog.headingfour && (
-      <h3 className="text-xl md:text-2xl font-semibold text-[#333333] mt-4">
-        {blog.headingfour}
-      </h3>
-    )}
-    {blog.descti && <p>{blog.descti}</p>}
+        {blog.headingfour && (
+          <h3 className="!mt-4 text-xl md:text-2xl font-semibold text-[#333333] ">
+            {blog.headingfour}
+          </h3>
+        )}
+        {blog.descti && <p>{blog.descti}</p>}
 
-    {blog.headingfive && (
-      <h3 className="text-xl md:text-2xl font-semibold text-[#0C0C3C] mt-4">
-        {blog.headingfive}
-      </h3>
-    )}
-    {blog.desctio && <p>{blog.desctio}</p>}
-  </div>
-</div>
+        {blog.headingfive && (
+          <h3 className="!mt-4 text-xl md:text-2xl font-semibold text-[#0C0C3C]">
+            {blog.headingfive}
+          </h3>
+        )}
+        {blog.desctio && <p>{blog.desctio}</p>}
+      </div>
+    </div>
 
   );
 };

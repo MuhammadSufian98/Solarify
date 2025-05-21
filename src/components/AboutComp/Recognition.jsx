@@ -34,7 +34,7 @@ const Recognition = () => {
       <div className="max-w-5xl mx-auto flex flex-col gap-16">
         {/* Title & Awards List */}
         <div className="w-full flex flex-col lg:flex-row justify-between gap-20">
-          <h1 className="text-4xl lg:text-5xl font-bold max-w-xs">
+          <h1 className="text-2xl lg:text-5xl font-bold max-w-xs">
             Recognition & Awards.
           </h1>
 
@@ -77,14 +77,14 @@ const Recognition = () => {
             />
           </div>
           <div className="w-full lg:w-1/2">
-            <h1 className="text-xl leading-10 text-gray-600 pb-10">
+            <h1 className="md:text-xl leading-8 md:leading-10 text-gray-600 pb-10">
               Our commitment to Solarify has been celebrated with a series of
               prestigious awards and accolades. These honors, ranging from
               industry-specific recognitions to community acknowledgments,
               underscore our relentless pursuit of excellence. Offering a
               detailed report on how the panels can increase energy output.
             </h1>
-            <button className="group inline-flex items-center bg-blue-400 text-white font-semibold text-lg rounded-full px-6 py-3 transition-all duration-300 hover:bg-white hover:text-blue-950 shadow-lg">
+            <button className="group inline-flex items-center bg-blue-400 text-white font-semibold text-lg rounded-full px-4 py-2 md:px-6 md:py-3 transition-all duration-300 hover:bg-white hover:text-blue-950 shadow-lg">
               <span className="transition-all duration-300 group-hover:pr-3">
                 View Services
               </span>

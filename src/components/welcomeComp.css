@@ -4,6 +4,7 @@
   font-weight: normal;
   font-style: normal;
 }
+
 .MainWelcomeDiv {
   font-family: "Outfit", sans-serif;
   margin: auto;
@@ -11,45 +12,53 @@
   width: 1040px;
   display: flex;
 }
+
 .WelcomeDiv {
   display: flex;
   flex-direction: column;
   width: 50%;
   gap: 20px;
 }
+
 .WelcomeHeading {
   font-size: 50px;
   font-weight: 600;
   line-height: 57px;
   color: rgb(12, 12, 60);
 }
+
 .WelcomeTextDiv {
   display: flex;
   gap: 20px;
 }
+
 .YearsDiv {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
+
 .noOfYears {
   font-size: 110px;
   font-weight: 700;
   line-height: normal;
   color: rgb(12, 12, 60);
 }
+
 .YearsHeading {
   font-size: 28px;
   font-weight: 600;
   line-height: 35.84px;
   color: rgb(123, 120, 247);
 }
+
 .WelcomeText {
   font-size: 18px;
   font-weight: 500;
   line-height: 32.4px;
   color: rgb(82, 82, 87);
 }
+
 .WelcomeImgDiv {
   display: grid;
   place-items: end;
@@ -71,4 +80,73 @@
   width: 175px;
   height: auto;
   pointer-events: none;
+}
+
+/* ===== Responsive Styling ===== */
+@media (max-width: 1040px) {
+  .MainWelcomeDiv {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .MainWelcomeDiv {
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+  }
+
+  .WelcomeDiv {
+    width: 100%;
+  }
+
+  .WelcomeTextDiv {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .WelcomeImgDiv {
+    width: 100%;
+    place-items: center;
+    margin-top: 30px;
+  }
+
+  .fixedImg {
+    margin: -50px 0 0 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .WelcomeHeading {
+    font-size: 24px;
+    line-height: 1.3;
+    text-align: center;
+  }
+
+  .noOfYears {
+    font-size: 50px;
+    text-align: center;
+  }
+
+  .YearsHeading {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .WelcomeText {
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+  }
+
+  .fixedImg {
+    margin: 40px 0 0 80px;
+    margin-bottom:-100px;
+    margin-right:-100px;
+      width: 120px;
+  }
+
+  .WelcomeImg {
+    width: 80%;
+  }
 }

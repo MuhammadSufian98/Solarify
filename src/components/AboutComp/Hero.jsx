@@ -78,8 +78,8 @@ const Hero = () => {
   />
 
 {/* Rotating div with circular text and background image */}
-<div className="absolute top-40 -left-10 rounded-full p-1 border border-gray-400 animate-spin">
-  <div className="relative w-10 h-10 sm:w-24 sm:h-24 rounded-full bg-[url('/About/rotating1.jpg')] bg-cover bg-center shadow-md">
+<div className="absolute top-40 -left-6 -sm:left-10 rounded-full p-1 border border-gray-400 animate-spin">
+  <div className="relative w-16 h-16 sm:w-24 sm:h-24 rounded-full bg-[url('/About/rotating1.jpg')] bg-cover bg-center shadow-md">
 
     {/* SVG for circular text */}
     <svg

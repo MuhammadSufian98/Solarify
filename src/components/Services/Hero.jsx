@@ -8,15 +8,16 @@ const Hero = () => {
             <div className="w-[90%] max-w-8xl  flex flex-col lg:flex-row gap-12 ">
                 {/* Left Section */}
                 <div className="flex flex-col gap-8  lg:gap-y-26  max-w-2xl">
-                    <h1 className="text-4xl md:text-6xl font-extrabold text-[#0a0a2f] leading-tight !m-0">
-                        BLOGS &<br /> ARTICLES<span className="text-[#0a0a2f]">.</span>
+                    <h1 className="text-4xl md:text-6xl lg:text-8xl font-extrabold text-[#0a0a2f] leading-tight !m-0">
+                         OUR <br /> SERVICES <span className="text-[#0a0a2f]">.</span>
                     </h1>
                     <div className="flex flex-col gap-6  max-w-sm !m-0">
                         <p className="text-gray-600 text-lg">
-                            By focusing on eco-friendly solutions and reducing reliance on fossil fuels, this project aims to lead the way to the future.
+                            Unlike fossil fuels, which are finite and contribute to environmental degradation, this renewable option is natural.
                         </p>
                         
-           <Link
+
+                        <Link
                             to="/contact"
                             className="group flex items-center cursor-pointer !m-0 md:w-1/2 "
                         >
@@ -46,13 +47,13 @@ const Hero = () => {
                 {/* Right Section (Image + Rotating Badge) */}
                 <div className="relative w-full max-w-md h-[60vh] md:!h-[90vh]">
                     <img
-                        src="/Blog/blog.jpg"
-                        alt="bolg"
+                        src="/Services/1.png"
+                        alt="Services"
                         className="rounded-3xl shadow-lg w-full h-[60vh] md:!h-[90vh] object-cover"
                     />
 
                     {/* Rotating div with circular text and background image */}
-                    <div className="absolute top-38 md:top-58 -left-12 max-md:left-[-12px] rounded-full p-1 border border-gray-400 animate-spin">
+                    <div className="absolute top-58 -left-12 max-md:left-[-12px] rounded-full p-1 border border-gray-400 animate-spin">
                         <div className="relative w-16 h-16 sm:w-24 sm:h-24 rounded-full bg-[url('/About/rotating1.jpg')] bg-cover bg-center shadow-md">
 
                             {/* SVG for circular text */}

@@ -47,7 +47,7 @@ const handleNavigate=(id)=>{
         {/* Header Section */}
         <div className="flex flex-col-reverse py-5 sm:flex-row items-center justify-between gap-10 mb-16">
           <div className="text-center sm:text-left">
-            <h1 className="text-3xl sm:text-4xl font-semibold text-[#0C0C3C] max-w-md">
+            <h1 className="text-2xl sm:text-4xl font-semibold text-[#0C0C3C] max-w-md">
               Our newest posts on renewable energy for living.
             </h1>
           </div>
@@ -55,7 +55,7 @@ const handleNavigate=(id)=>{
             <p className="text-gray-600 text-lg max-w-sm mb-4 pb-10 sm:mb-2">
               Discover the positive effects of choosing sustainable energy and tips for building a greener lifestyle.
             </p>
-            <button className="group inline-flex items-center bg-blue-600 text-white font-medium rounded-full px-6 py-3 cursor-pointer  transition-all duration-300 hover:bg-white hover:text-blue-700 border-2 border-blue-600 shadow-md">
+            <button className="group inline-flex items-center bg-blue-600 text-white font-medium rounded-full px-4 py-2 md:px-6 md:py-3 cursor-pointer  transition-all duration-300 hover:bg-white hover:text-blue-700 border-2 border-blue-600 shadow-md">
               <span className="transition-all duration-300 group-hover:pr-3">
                 Contact Now
               </span>
@@ -98,7 +98,7 @@ const handleNavigate=(id)=>{
                   <div className="h-4 border-l border-gray-400"></div>
                   <span>{card.readTime}</span>
                 </div>
-                <h3 className="text-xl font-semibold text-[#0C0C3C] group-hover:text-[#7b78f7] transition-colors duration-300">
+                <h3 className="text-lg md:text-xl font-semibold text-[#0C0C3C] group-hover:text-[#7b78f7] transition-colors duration-300">
                   {card.title}
                 </h3>
               </div>
