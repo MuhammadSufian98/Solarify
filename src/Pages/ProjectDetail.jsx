@@ -1,8 +1,13 @@
 import React from 'react'
+import Hero from '../components/ProjectDetail/Hero';
+import Inititative from '../components/ProjectDetail/Inititative';
 
 const ProjectDetail = () => {
   return (
-    <div>ProjectDetail</div>
+    <div>
+        <Hero/>
+        <Inititative/>
+    </div>
   )
 }
 

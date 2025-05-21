@@ -13,6 +13,7 @@ import Project from "./Pages/Project.jsx";
 
 import BlogDetail from "./components/blog/BlogDetail.jsx";
 import ProjectDetail from "./Pages/ProjectDetail.jsx";
+import Inititative from "./components/ProjectDetail/Inititative.jsx";
 
 
 // Layout Component
@@ -35,9 +36,11 @@ const router = createBrowserRouter([
       { path: "/", element: <CompletePage /> },
       { path: "/about", element: <About /> },
       { path: "/blog", element: <Blogs /> },
-      { path: "/blogdetail/", element: <BlogDetail /> },
+      { path: "/blogdetail/:id", element: <BlogDetail /> },
       { path: "/project", element: <Project /> },
-      {path:"/projectDetail",element:<ProjectDetail/>}
+      {path:"/projectDetail/:id",element:<ProjectDetail/>},
+      { path:"/initiative/:id", element:<Inititative/>}
+
     ],
   },
 ]);

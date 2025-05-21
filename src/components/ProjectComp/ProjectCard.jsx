@@ -1,21 +1,25 @@
 import React from "react";
 import { FaArrowRight } from "react-icons/fa";
 import { MdArrowOutward } from "react-icons/md";
+import { useNavigate } from "react-router-dom";
 
 const cardsData = [
   {
+    id:"1",
     image: "/Blog/b1.webp",
     date: "Mar 9, 2024",
     readTime: "6 min to read",
     title: "How to choose the solar panels for your home",
   },
   {
+    id:"2",
     image: "/Blog/b2.webp",
     date: "Feb 21, 2024",
     readTime: "5 min to read",
     title: "Benefits of switching to renewable energy today",
   },
   {
+    id:"3",
     image: "/Blog/b3.webp",
     date: "Jan 15, 2024",
     readTime: "4 min to read",
@@ -23,7 +27,20 @@ const cardsData = [
   },
 ];
 
+
+
 const ProjectCard = () => {
+
+  const navigate = useNavigate();
+
+
+// <!-- ========== Functions Section ========== -->
+const handleNavigate=(id)=>{
+  navigate(`/blogDetail/${id}`)}
+// <!-- =========Functions End ========== -->
+
+
+
   return (
     <section className="py-16 bg-[#F7F8FA]">
       <div className="max-w-6xl mx-auto px-4">
@@ -51,17 +68,21 @@ const ProjectCard = () => {
 
         {/* Cards Section */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {cardsData.map((card, index) => (
+          {cardsData.map((card) => (
             <div
-              key={index}
+              key={card.id}
               className="bg-white cursor-pointer rounded-xl overflow-hidden shadow-lg group transition-transform duration-300 hover:-translate-y-2"
             >
               {/* Image */}
-              <div className="relative w-full h-64 overflow-hidden">
+              <div className="relative w-full h-64 overflow-hidden"
+                onClick={() => handleNavigate(card.id)}
+              
+              >
                 <img
                   src={card.image}
                   alt={card.title}
                   className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+
                 />
                 <div className="absolute inset-0 flex items-center justify-center bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <div className="bg-[#7b78f7] -rotate-60 text-white p-4 rounded-full">
