@@ -17,7 +17,7 @@ const brightArray = [
   {
     id: "2",
     img: img2,
-    heading: "Sustainable Future Energy ",
+    heading: "Sustainable Future Energy",
     para: "Each unit reflecting and absorbing sunlight to create a mesmerizing, efficient network of power.",
   },
   {
@@ -42,52 +42,42 @@ const brightArray = [
     id: "6",
     img: img6,
     heading: "Solar Sky Energy Solutions",
-    para: "Brings together cutting-edge solar technologies and collaborative efforts to create a powerful renewable energy grid. ",
+    para: "Brings together cutting-edge solar technologies and collaborative efforts to create a powerful renewable energy grid.",
   },
 ];
-const Bright = (identity) => {
-const navigate = useNavigate();
-const handleNavigate=(id)=>{
-  navigate(`/projectDetail/${id}`)
-}
+
+const Bright = () => {
+  const navigate = useNavigate();
+
+  const handleNavigate = (id) => {
+    navigate(`/projectDetail/${id}`);
+  };
 
   return (
-    <div key={identity.id} className="w-full min-h-screen bg-gray-100 py-20">
-      <div className="w-[70%] mx-auto flex flex-col gap-10 ">
-
-        {brightArray.map((identity)=>(
-<<<<<<< HEAD
-             <div className="rounded-md w-full  ">
-          <div className="flex sm:flex-row bg-white flex-col ga-5 h-130 sm:h-80"
-          onClick={()=>handleNavigate(identity.id)}
+    <div className="w-full min-h-screen bg-gray-100 py-20">
+      <div className="w-[90%] md:w-[70%] mx-auto flex flex-col gap-10">
+        {brightArray.map((item) => (
+          <div
+            key={item.id}
+            onClick={() => handleNavigate(item.id)}
+            className="cursor-pointer rounded-2xl bg-white flex flex-col sm:flex-row h-auto sm:h-80 shadow-md hover:shadow-lg transition duration-300"
           >
-=======
-             <div className="!rounded-md w-full  ">
-          <div className="flex sm:flex-row rounded-2xl bg-white flex-col ga-5 h-130 sm:h-80">
->>>>>>> 0f5fa4b1b92cad0de294c99ea3dd0070a6bf87b9
-            <div className="sm:w-1/2 w-full  rounded-md overflow-hidden cursor-pointer sm:h-full">
+            <div className="sm:w-1/2 w-full h-64 sm:h-full overflow-hidden rounded-t-2xl sm:rounded-l-2xl sm:rounded-tr-none">
               <img
-                className="w-full rounded-md h-full hover:scale-120 transition duration-200 object-orient object-cover  bg-center"
-                src={identity.img}
-                alt=""
+                src={item.img}
+                alt={item.heading}
+                className="w-full h-full object-cover hover:scale-105 transition duration-300"
               />
             </div>
-            <div className="p-5 w-full sm:w-1/2 flex  flex-col items-center ">
-              <h1 className="text-xl md:text-2xl py-2 font-semibold ">
-                {identity.heading}
-              </h1>
-              <p className="text-sx md:text-lg text-center pb-10 max-w-md text-gray-500">
-                {identity.para}
-              </p>
-              <span className="px-3 py-2 md:px-5 md:py-3 border rounded-full text-md font-semibold hover:bg-blue-600 cursor-pointer hover:text-white transition duration-300 hover:border-gray-300">
+            <div className="sm:w-1/2 w-full p-6 flex flex-col justify-center items-center text-center">
+              <h2 className="text-xl md:text-2xl font-semibold mb-4">{item.heading}</h2>
+              <p className="text-sm md:text-lg text-gray-600 mb-6">{item.para}</p>
+              <span className="px-4 py-2 border border-blue-600 text-blue-600 rounded-full font-semibold hover:bg-blue-600 hover:text-white transition">
                 View Details
               </span>
             </div>
           </div>
-        </div>
-
         ))}
-       
       </div>
     </div>
   );
