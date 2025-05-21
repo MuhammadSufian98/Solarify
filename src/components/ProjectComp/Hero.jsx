@@ -1,30 +1,46 @@
 import React from "react";
-import { MdArrowOutward } from "react-icons/md";
+import { LuArrowUpRight } from 'react-icons/lu';
+import { Link } from 'react-router-dom'
 
 const Hero = () => {
   return (
     <div className="w-full :min-h-screen bg-white">
       <div className="w-[70%] mx-auto flex flex-col lg:flex-row justify-between items-center py-10 gap-12">
         {/* Left Section */}
-        <div className="flex flex-col gap-6 items-center lg:items-start max-w-2xl">
-          <h1 className="text-3xl text-center sm:text-[100px]  font-bold text-gray-900 leading-tight">
-            OUR <span className="">PROJECTS.</span>
-          </h1>
+<div className="flex flex-col gap-6 items-center text-center max-w-2xl mx-auto">
+  <h1 className="text-3xl sm:text-[100px] font-bold text-gray-900 leading-tight">
+    OUR <span className="">PROJECTS.</span>
+  </h1>
 
-          <p className="text-lg text-left font-semibold text-gray-600 max-w-sm">
-            Advanced design boosts the efficiency of the solar cells by
-            reducing energy loss and enhancing light absorption.
-          </p>
+  <p className="text-lg font-semibold text-gray-600 max-w-sm">
+    Advanced design boosts the efficiency of the solar cells by
+    reducing energy loss and enhancing light absorption.
+  </p>
 
-          <button className="group cursor-pointer inline-flex items-center bg-blue-500 text-white font-semibold text-lg rounded-full px-4 py-2 md:px-6 md:py-3 transition-all duration-300 hover:bg-white hover:text-blue-900 border-2 border-blue-500 shadow-lg">
-            <span className="transition-all duration-300 group-hover:pr-3">
-              Contact Now
-            </span>
-            <span className="ml-2 transition-transform duration-300 transform group-hover:translate-x-1 text-xl">
-              <MdArrowOutward />
-            </span>
-          </button>
-        </div>
+  <Link
+    to="/contact"
+    className="group flex flex-col sm:flex-row items-center justify-center gap-4 cursor-pointer"
+  >
+    {/* Text Button */}
+    <button className="flex items-center gap-2 px-6 py-3 bg-[#6761db] text-white rounded-full font-semibold text-base group-hover:bg-[#0a0a2f] transition duration-300">
+      Contact Now
+    </button>
+
+    {/* Icon Button with Animating Arrows */}
+    <button className="relative w-12 h-12 bg-[#6761db] text-white rounded-full overflow-hidden flex items-center justify-center group-hover:bg-[#0a0a2f] transition duration-300">
+      {/* First Icon: Moves up-right */}
+      <span className="absolute transition-transform duration-500 ease-out group-hover:translate-x-5 group-hover:-translate-y-7">
+        <LuArrowUpRight size={24} />
+      </span>
+
+      {/* Second Icon: Comes in from bottom-left */}
+      <span className="absolute text-white transition-transform duration-500 ease-out translate-x-[-1.2rem] translate-y-[1.5rem] opacity-0 group-hover:translate-x-0 group-hover:translate-y-0 group-hover:opacity-100">
+        <LuArrowUpRight size={24} />
+      </span>
+    </button>
+  </Link>
+</div>
+
 
         {/* Right Image */}
         <div className="relative w-full sm:w-80 flex-shrink-0">

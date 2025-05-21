@@ -9,36 +9,26 @@ function RenewableSection() {
   const [show2, setShow2] = useState(false);
 
   return (
-    <div className="font-[Outfit]  mx-auto max-w-5xl px-[30px] py-[80px] flex flex-col gap-[30px]">
-      <h1 className="w-[900px] text-[28px] font-semibold leading-[35.84px] text-center text-[rgb(12,12,60)] mx-auto">
-        We specialize in customized solar solutions designed to power your
-        business towards growth and efficiency. By optimizing your energy usage
-        with expert guidance and cutting-edge solar technology, we help you
-        achieve sustainable success while reducing costs and environmental
-        impact.
-      </h1>
-
-      <div className="flex w-[1000px] justify-between gap-[50px]">
+    <div className="px-4 py-8">
+      <div className="flex flex-col lg:flex-row gap-10 mx-auto max-w-6xl">
         {/* QnA Section */}
-        <div className="flex flex-col justify-start h-[500px]">
-          <h1 className="text-[50px] font-semibold leading-[57px] text-[rgb(12,12,60)]">
+        <div className="flex flex-col flex-1">
+          <h1 className="text-2xl md:text-4xl font-semibold leading-tight text-[#0C0C3C] -!mt-40">
             Renewable energy solar panels.
           </h1>
 
-          <div className="flex flex-col mt-2">
+          <div className="flex flex-col gap-3 !mt-10">
             {/* Q1 */}
-            <div className="w-[400px] !mb-[30px]">
-              <div className="flex w-[450px] relative">
-                <h1 className="text-[24px] font-semibold w-[400px] m-0 text-black">
+            <div>
+              <div className="flex justify-between items-start gap-4">
+                <h2 className="text-lg md:text-xl font-semibold text-black flex-1">
                   How much does solar cost?
-                </h1>
-                <span className="flex gap-[10px]">
+                </h2>
+                <span className="flex-shrink-0">
                   <img
                     src={PlusSign}
                     alt="PlusSign"
-                    className={`w-[30px] cursor-pointer ${
-                      !show1 ? "block" : "hidden"
-                    }`}
+                    className={`w-6 cursor-pointer ${!show1 ? "block" : "hidden"}`}
                     onClick={() => {
                       setShow1(true);
                       setShow2(false);
@@ -47,17 +37,15 @@ function RenewableSection() {
                   <img
                     src={MinusSign}
                     alt="MinusSign"
-                    className={`w-[30px] cursor-pointer ${
-                      show1 ? "block" : "hidden"
-                    }`}
+                    className={`w-6 cursor-pointer ${show1 ? "block" : "hidden"}`}
                     onClick={() => setShow1(false)}
                   />
                 </span>
               </div>
               <p
-                className={`transition-all duration-400 ease-in-out transform ${
+                className={`transition-all duration-400 ease-in-out transform text-sm md:text-base ${
                   show1
-                    ? "max-h-[300px] opacity-100 translate-y-0 mt-[10px]"
+                    ? "max-h-[300px] opacity-100 translate-y-0 mt-2"
                     : "max-h-0 opacity-0 -translate-y-2 overflow-hidden"
                 }`}
               >
@@ -65,26 +53,24 @@ function RenewableSection() {
                 the size of the system, the location, the type of panels, and
                 any additional equipment or services required. However, as of
                 the latest data, the average cost of a residential solar panel
-                system in the United States is between 15,000 and 25,000 before
-                incentives.
+                system in the United States is between $15,000 and $25,000
+                before incentives.
               </p>
             </div>
 
-            <hr className="border-none h-[1px] bg-[#ccc] my-[20px]" />
+            <hr className="border-t border-gray-300" />
 
             {/* Q2 */}
-            <div className="w-[400px]">
-              <div className="flex w-[450px] relative">
-                <h1 className="text-[24px] font-semibold w-[400px] m-0 text-black">
+            <div>
+              <div className="flex justify-between items-start gap-4">
+                <h2 className="text-lg md:text-xl font-semibold text-black flex-1">
                   How does solar help the environment?
-                </h1>
-                <span className="flex gap-[10px]">
+                </h2>
+                <span className="flex-shrink-0">
                   <img
                     src={PlusSign}
                     alt="PlusSign"
-                    className={`w-[30px] cursor-pointer ${
-                      !show2 ? "block" : "hidden"
-                    }`}
+                    className={`w-6 cursor-pointer ${!show2 ? "block" : "hidden"}`}
                     onClick={() => {
                       setShow2(true);
                       setShow1(false);
@@ -93,17 +79,15 @@ function RenewableSection() {
                   <img
                     src={MinusSign}
                     alt="MinusSign"
-                    className={`w-[30px] cursor-pointer ${
-                      show2 ? "block" : "hidden"
-                    }`}
+                    className={`w-6 cursor-pointer ${show2 ? "block" : "hidden"}`}
                     onClick={() => setShow2(false)}
                   />
                 </span>
               </div>
               <p
-                className={`transition-all duration-400 ease-in-out transform ${
+                className={`transition-all duration-400 ease-in-out transform text-sm md:text-base ${
                   show2
-                    ? "max-h-[300px] opacity-100 translate-y-0 mt-[10px]"
+                    ? "max-h-[300px] opacity-100 translate-y-0 mt-2"
                     : "max-h-0 opacity-0 -translate-y-2 overflow-hidden"
                 }`}
               >
@@ -116,20 +100,18 @@ function RenewableSection() {
         </div>
 
         {/* Images */}
-        {/* <div className="flex gap-[20px]">
-          <div className="flex items-start">
-            <img
-              src={Image1}
-              alt="Image1"
-              className="w-[400px] rounded-[25px]"
-            />
-          </div>
+        <div className="flex flex-col md:flex-row gap-6 flex-1 justify-center items-center">
+          <img
+            src={Image1}
+            alt="Image1"
+            className="w-full md:w-1/2  max-w-md rounded-2xl"
+          />
           <img
             src={Image2}
             alt="Image2"
-            className="w-[400px] h-[370px] rounded-[25px]"
+            className="w-full md:w-1/2 max-w-md h-72 md:h-auto rounded-2xl"
           />
-        </div> */}
+        </div>
       </div>
     </div>
   );

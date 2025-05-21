@@ -85,7 +85,7 @@ function PowerService() {
   return (
     <div className="font-[Outfit] mx-auto py-16 px-4 w-full bg-[#F7F8FA] flex flex-col gap-8">
       <div className="flex justify-center">
-        <h1 className="max-w-[600px] text-center text-2xl sm:text-4xl lg:text-[50px] font-semibold leading-tight text-[rgb(12,12,60)]">
+        <h1 className="max-w-[600px] text-center text-3xl md:text-4xl lg:text-[50px] font-semibold leading-tight text-[rgb(12,12,60)]">
           Excellence green energy power services.
         </h1>
       </div>

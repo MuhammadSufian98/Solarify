@@ -1,5 +1,6 @@
 import React from "react";
-import { MdArrowOutward } from "react-icons/md";
+import { LuArrowUpRight } from 'react-icons/lu';
+import { Link } from 'react-router-dom';
 import img1 from "/public/About/trop1.avif";
 import img2 from "/public/About/trop2.avif";
 import img3 from "/public/About/trop3.avif";
@@ -80,14 +81,30 @@ const RecognitionAwards = () => {
             <h1 className="text-xl leading-10 text-gray-600 pb-10">
               Our commitment to Solarify has been celebrated with a series of prestigious awards and accolades. These honors, ranging from industry-specific recognitions to community acknowledgments, underscore our relentless pursuit of excellence. Offering a detailed report on how the panels can increase energy output.
             </h1>
-            <button className="group inline-flex items-center bg-blue-400 text-white font-semibold text-lg rounded-full px-6 py-3 transition-all duration-300 hover:bg-white hover:text-blue-950 shadow-lg cursor-pointer">
-              <span className="transition-all duration-300 group-hover:pr-3">
+            <Link
+              to="/contact"
+              className="group flex items-center cursor-pointer !m-0 md:w-1/2 "
+            >
+              {/* Text Button */}
+              <button className="!m-0 flex items-center cursor-pointer gap-2 px-6 py-3 bg-[#6761db] text-white rounded-full font-semibold text-base group-hover:bg-[#0a0a2f] transition duration-300">
                 View Services
-              </span>
-              <span className="ml-2 transition-transform duration-300 transform group-hover:translate-x-1 text-xl">
-                <MdArrowOutward />
-              </span>
-            </button>
+              </button>
+
+              {/* Icon Button with Animating Arrows */}
+              <button className="!m-0 relative w-12 h-12 cursor-pointer bg-[#6761db] text-white rounded-full overflow-hidden flex items-center justify-center group-hover:bg-[#0a0a2f] transition duration-300">
+
+                {/* First Icon: Moves up-right */}
+                <span className="absolute transition-transform duration-500 ease-out group-hover:translate-x-5 group-hover:-translate-y-7">
+                  <LuArrowUpRight size={24} />
+                </span>
+
+                {/* Second Icon: Comes in from bottom-left */}
+                <span className="absolute text-white transition-transform duration-500 ease-out translate-x-[-1.2rem] translate-y-[1.5rem] opacity-0 group-hover:translate-x-0 group-hover:translate-y-0 group-hover:opacity-100">
+                  <LuArrowUpRight size={24} />
+                </span>
+
+              </button>
+            </Link>
           </div>
         </div>
       </div>
