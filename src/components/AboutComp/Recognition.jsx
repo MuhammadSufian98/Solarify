@@ -34,39 +34,44 @@ const Recognition = () => {
     <div className="w-full min-h-screen bg-gray-100 py-20 px-4">
       <div className="max-w-5xl mx-auto flex flex-col gap-16">
         {/* Title & Awards List */}
-        <div className="w-full flex flex-col lg:flex-row justify-between gap-20">
-          <h1 className="text-2xl lg:text-5xl font-bold max-w-xs">
-            Recognition & Awards.
-          </h1>
+        <div className="w-full flex flex-col lg:flex-row justify-between gap-y-10 lg:gap-x-20">
+  {/* Heading */}
+  <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold max-w-full lg:max-w-xs text-center lg:text-left">
+    Recognition & Awards.
+  </h1>
 
-          <div className="flex flex-col gap-10 w-full lg:w-2/3">
-            {AwardArray.map((item) => (
-              <div
-                key={item.id}
-                className="group relative flex flex-col sm:flex-row gap-10 text-xl border-b pb-5 border-gray-300 cursor-pointer"
-              >
-                <span>{item.year}</span>
+  {/* Awards List */}
+  <div className="flex flex-col gap-10 w-full lg:w-2/3">
+    {AwardArray.map((item) => (
+      <div
+        key={item.id}
+        className="group relative flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-10 text-base md:text-lg lg:text-xl border-b pb-5 border-gray-300 cursor-pointer"
+      >
+        {/* Year */}
+        <span className="min-w-[60px] text-gray-600">{item.year}</span>
 
-                {/* Academy Name + Hover Image */}
-                <span className="relative text-gray-800 font-bold group-hover:text-blue-600 transition">
-                  {item.acadmy}
+        {/* Academy Name + Hover Trophy */}
+        <span className="relative text-gray-800 font-semibold group-hover:text-blue-600 transition">
+          {item.acadmy}
 
-                  {/* Hover Trophy Image */}
-                  <img
-                    src={item.img}
-                    alt="Trophy"
-                    className="absolute -top-25 left-1/2 -rotate-13 w-28 h-28 object-cover rounded-xl shadow-lg opacity-0 
-                    group-hover:opacity-100 
-                    transform -translate-x-full group-hover:translate-x-0 
-                    transition-all duration-500 z-10"
-                  />
-                </span>
+          {/* Trophy Hover Image */}
+          <img
+            src={item.img}
+            alt="Trophy"
+            className="absolute -top-28 left-1/2 w-24 h-24 object-cover rounded-xl shadow-lg opacity-0 
+            group-hover:opacity-100 
+            -translate-x-1/2 group-hover:-translate-y-2 
+            transition-all duration-500 z-10"
+          />
+        </span>
 
-                <span>{item.award}</span>
-              </div>
-            ))}
-          </div>
-        </div>
+        {/* Award Name */}
+        <span className="text-gray-700">{item.award}</span>
+      </div>
+    ))}
+  </div>
+</div>
+
 
         {/* Description Section */}
         <div className="flex flex-col-reverse lg:flex-row w-full justify-around gap-10">
@@ -90,7 +95,7 @@ const Recognition = () => {
               className="group flex items-center cursor-pointer !m-0 md:w-1/2 "
             >
               {/* Text Button */}
-              <button className="!m-0 flex items-center cursor-pointer gap-2 px-6 py-3 bg-[#6761db] text-white rounded-full font-semibold text-base group-hover:bg-[#0a0a2f] transition duration-300">
+              <button className="!m-0 flex items-center cursor-pointer gap-2 px-4 py-2 !md:px-6 !md:py-3 bg-[#6761db] text-white rounded-full font-semibold text-base group-hover:bg-[#0a0a2f] transition duration-300">
                 View Services
               </button>
 

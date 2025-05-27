@@ -78,7 +78,7 @@ const RecognitionAwards = () => {
             />
           </div>
           <div className="w-full lg:w-1/2">
-            <h1 className="text-xl leading-10 text-gray-600 pb-10">
+            <h1 className="text-sm md:text-xl leading-8 md:leading-10 text-gray-600 pb-10">
               Our commitment to Solarify has been celebrated with a series of prestigious awards and accolades. These honors, ranging from industry-specific recognitions to community acknowledgments, underscore our relentless pursuit of excellence. Offering a detailed report on how the panels can increase energy output.
             </h1>
             <Link

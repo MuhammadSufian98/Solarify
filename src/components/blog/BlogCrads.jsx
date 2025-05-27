@@ -107,7 +107,7 @@ const BlogCard = () => {
                   <span>{card.readTime}</span>
                 </div>
 
-                <h3 className="text-2xl font-semibold text-[#0C0C3C] group-hover:text-[#7b78f7] transition-colors duration-300">
+                <h3 className="text-xl md:text-2xl font-semibold text-[#0C0C3C] group-hover:text-[#7b78f7] transition-colors duration-300">
                   {card.title}
                 </h3>
               </div>

@@ -72,7 +72,7 @@ const Bright = () => {
             <div className="sm:w-1/2 w-full p-6 flex flex-col justify-center items-center text-center">
               <h2 className="text-xl md:text-2xl font-semibold mb-4">{item.heading}</h2>
               <p className="text-sm md:text-lg text-gray-600 mb-6">{item.para}</p>
-              <span className="px-4 py-2 border border-blue-600 text-blue-600 rounded-full font-semibold hover:bg-blue-600 hover:text-white transition">
+              <span className="!mt-2 px-4 py-2 border border-blue-600 text-blue-600 rounded-full font-semibold hover:bg-blue-600 hover:text-white transition">
                 View Details
               </span>
             </div>

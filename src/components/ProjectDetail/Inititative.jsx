@@ -260,7 +260,7 @@ const Initiative = () => {
           <img
             src={item.mainImg}
             alt={item.heading}
-            className="w-full h-full object-cover object-center"
+            className="w-full h-full object-cover"
           />
         </div>
 

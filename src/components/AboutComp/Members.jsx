@@ -85,7 +85,7 @@ const Members = () => {
           {getVisibleEmployees().map((person) => (
             <div
               key={person.id}
-              className="bg-white  p-5 rounded-xl flex flex-col items-center "
+              className="bg-white p-5 rounded-xl flex flex-col items-center "
             >
               <div className="w-full h-70 overflow-hidden rounded-lg ">
                 <img
@@ -94,7 +94,7 @@ const Members = () => {
                   className="w-full h-72 cursor-pointer object-cover hover:scale-105 transition duration-150 "
                 />
               </div>
-              <h2 className="text-2xl font-semibold text-gray-800 mt-4">
+              <h2 className="text-2xl font-semibold text-gray-800 !mt-4">
                 {person.name}
               </h2>
               <p className="text-gray-500 text-lg">{person.post}</p>
